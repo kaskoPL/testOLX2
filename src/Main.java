@@ -20,6 +20,8 @@ public class Main {
         driver.manage().window().setSize(new Dimension(1800,1000));
         driver.get("https://www.olx.pl");
 //        BrowsingContext bContext = new BrowsingContext(driver, driver.getWindowHandle());
+        ((JavascriptExecutor)driver).executeAsyncScript("");
+
         try {
             WebElement myElement = driver.findElement(By.linkText("Zwierzęta"));
 

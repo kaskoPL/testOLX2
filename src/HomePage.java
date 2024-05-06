@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage {
     protected WebDriver driver;
-    private By messageBy = By.tagName("h1");
+    private By messageBy = By.tagName("h2");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

@@ -3,9 +3,10 @@ import org.openqa.selenium.WebDriver;
 
 public class SignIn {
     protected WebDriver driver;
-    private By usernameBy = By.name("login");
-    private By passwordBy = By.name("password");
-    private By loginBy = By.cssSelector("button[data-testid='login-btn']");
+    private By usernameBy = By.id("username");
+    private By passwordBy = By.id("password");
+    private By loginBy = By.cssSelector("button[class='radius']");
+//    private By loginBy = By.cssSelector("button[data-testid='login-btn']");
 
     public SignIn(WebDriver driver) {
         this.driver = driver;
